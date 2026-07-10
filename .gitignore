@@ -1,0 +1,17 @@
+# Documentos pessoais fora do escopo do site
+IR/
+Olds/
+Posicao XP/
+Posicao Inter.xlsx
+
+# Dados de origem (já embutidos no HTML, não usados em runtime)
+caixa-2026-05.json
+
+# Cache gerado localmente pelo update_prices.py
+caixa-prices.json
+
+# Claude Code project files
+.claude/
+
+# Backup local com dados em claro — NUNCA publicar
+caixa-v9-local-backup.html
