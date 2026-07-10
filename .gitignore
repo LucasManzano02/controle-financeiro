@@ -15,3 +15,7 @@ caixa-prices.json
 
 # Backup local com dados em claro — NUNCA publicar
 caixa-v9-local-backup.html
+
+# Artefatos de setup do 2FA — contêm o segredo TOTP em claro — NUNCA publicar
+totp-secret.txt
+totp-qr.png
