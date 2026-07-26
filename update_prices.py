@@ -30,17 +30,11 @@ CACHE_HOURS = 24
 
 # ── Configuração dos ativos ──────────────────────────────────────────────────
 # source: 'tesouro' (tipo+vencimento) | 'yahoo' (symbol) | 'anbima' (CNPJ)
+# NOTA: as posições da XP (fundos, CRI/CRA/CDB) vêm prontas do extrato mensal
+# via importar_xp.py — não precisam ser buscadas aqui. Este script cobre apenas
+# o que a XP não reporta: os ativos no exterior (Avenue).
 ASSETS = {
-    "LFT-2028":          {"source": "tesouro", "tipo": "Tesouro Selic", "vencimento": "01/03/2028"},
-    "NTNB-PRINC-2029":   {"source": "tesouro", "tipo": "Tesouro IPCA+", "vencimento": "15/05/2029"},
-    "SPY":               {"source": "yahoo",   "symbol": "SPY", "currency": "USD"},
-    # Fundos (CNPJ) — só atualizam com credenciais ANBIMA:
-    "35.789.436/0001-96": {"source": "anbima"},  # ARX Everest
-    "51.253.495/0001-00": {"source": "anbima"},  # MAPFRE Confiança
-    "37.910.132/0001-60": {"source": "anbima"},  # TREND INB
-    "50.862.124/0001-54": {"source": "anbima"},  # Vinland Debêntures
-    "35.648.999/0001-64": {"source": "anbima"},  # SPX Seahawk
-    "33.520.968/0001-06": {"source": "anbima"},  # Kapitalo K10
+    "SPY": {"source": "yahoo", "symbol": "SPY", "currency": "USD"},
 }
 
 UA = {"User-Agent": "Mozilla/5.0 (carteira-pessoal; +local)"}

@@ -19,3 +19,9 @@ caixa-v9-local-backup.html
 # Artefatos de setup do 2FA — contêm o segredo TOTP em claro — NUNCA publicar
 totp-secret.txt
 totp-qr.png
+caixa-secrets.json
+
+# Extratos da corretora usados no import mensal
+PosicaoDetalhada*.xlsx
+
+__pycache__/
