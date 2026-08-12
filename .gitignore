@@ -24,4 +24,7 @@ caixa-secrets.json
 # Extratos da corretora usados no import mensal
 PosicaoDetalhada*.xlsx
 
+# Relatórios gerados a partir dos dados pessoais
+Gastos-*.xlsx
+
 __pycache__/
